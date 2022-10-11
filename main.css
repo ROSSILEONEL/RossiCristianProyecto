@@ -1,0 +1,93 @@
+body{
+    min-height: 100vh;
+    padding: 0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px;
+width: 100%;}
+main .container-fluid{
+    /* background-image: url("./img/logoredondo1_png.png");  */
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(253, 245, 252, 0.993) ;
+background-size: contain;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+
+main .col{
+     width: 50%; 
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+main .container-fluid .col img{
+    width: 50%;
+    margin: auto;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: relative ;
+height:100px;}
+
+footer .col-3{
+    display: block;
+    color: aliceblue;
+    }
+    footer .col-3 p{
+        height: 10px;
+    }
+footer .col-3 .icon_footer ul li  {
+    list-style: none;
+}
+footer img{
+    height: 22px;
+    width:22px;
+}
+.catalogo{height: 100%;
+width: 100%;
+}
+.nav-prod{
+    width: 100%;
+    height: 100%;
+}
+
+/* QUUUUUEEEEERYYYYYSSSS */
+@media screen and (max-width:580px) {
+
+    main .container-fluid{
+flex-direction: column;
+width: 100%;
+height: 100%;}
+main .container-fluid .col{
+    width: 100%;
+    height: 90%;
+}
+main .container-fluid .col h1{
+    text-align: center;
+}
+main .container-fluid .col p{
+    text-align: justify;
+}
+main .container-fluid .col img{
+    width: 50%;
+    margin: auto;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .col-3{
+    height: 100%;
+    width: 100%;
+}
+}
