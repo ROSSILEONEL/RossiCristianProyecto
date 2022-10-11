@@ -90,4 +90,50 @@ footer .col-3{
     height: 100%;
     width: 100%;
 }
+.galeria-grid{
+display: flex;
+flex-direction: column;
 }
+.img-galeria{
+   
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.img-galeria img{
+   width: 100%;
+}
+}
+/* FIN DE LAS QUERYYYSS */
+.galeria-grid{
+    
+    display: grid;
+    max-height: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1/2fr 2fr 2fr 2fr 2fr 3fr ;
+    grid-template-areas: "titulo titulo "
+    "img-galeria img-galeria"
+    "img-galeria img-galeria"
+    "img-galeria img-galeria"
+    "img-galeria img-galeria"
+    "img-galeria img-galeria";
+    }
+    .img-galeria img{
+        padding: 5px;
+    }
+    .galeria-grid h1{
+        background-color: black;
+        color: aliceblue;
+        padding: 0;
+        text-align: center;
+    }
+    .img-galeria{
+grid-area: img-galeria;
+display: flex;
+
+flex-wrap: wrap;
+    }
+    .titulo{
+        grid-area: titulo;
+    }
