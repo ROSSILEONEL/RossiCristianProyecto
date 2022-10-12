@@ -1,6 +1,7 @@
 body{
     min-height: 100vh;
     padding: 0px;
+    background-color: #fefae1;
 }
 main{
     display: flex;
@@ -103,6 +104,27 @@ flex-direction: column;
 .img-galeria img{
    width: 100%;
 }
+.content-readers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content-readers .reader {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+}
+.content-readers div .img-reader{
+    display: block;
+    width: 100%;
+    object-fit: cover ;
+height: 100%;
+margin:0;}
+
+
 }
 /* FIN DE LAS QUERYYYSS */
 .galeria-grid{
@@ -137,3 +159,75 @@ flex-wrap: wrap;
     .titulo{
         grid-area: titulo;
     }
+    .content-readers div h1{
+        background-color: black;
+        color: aliceblue;
+    }
+    .content-readers .reader{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      border: solid 2px black;
+      border-top: none;
+    }
+  .content-readers .reader .cards img{
+    border-radius: 50%;
+    border: solid 2px rgb(115, 115, 202);
+  }
+    .content-readers .reader .cards div img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      
+    }
+  
+    .content-readers{
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-readers  .img-readers{
+        opacity: 1;
+        display: block;
+        max-width: 20rem;
+        max-height: 500px;
+        margin: auto;
+        border-radius: 2%;
+        margin-right: 100px;
+
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacto form{
+        width: 60%;
+    }
+    .contacto form .content_contacto{
+        align-items: center;
+        background-color: aliceblue;
+        max-width: 100%;
+        border: solid 2px black;
+    }
+    .contacto form .content_contacto img{
+        animation-name: movimiento;
+        
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        display: block;
+height: 200px;
+       margin: auto;
+    }
+@keyframes movimiento{
+0%{margin-left: 0%;}
+50%{margin-left: 65%;}
+100%{margin-left: 0%;}
+
+}
+.contacto form  :hover{
+    
+}
